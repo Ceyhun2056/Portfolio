@@ -1,0 +1,191 @@
+.education-section {
+    margin-top: 2.5rem;
+}
+
+.education-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.education-icon {
+    background: var(--color-card-bg, #e3eefd);
+    border-radius: 12px;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(26,35,126,0.10);
+}
+.education-icon img {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+.education-timeline {
+    position: relative;
+    margin-left: 32px;
+    padding-left: 32px;
+    border-left: 2px solid #bbb;
+}
+
+.education-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding-left: 0.5rem;
+}
+
+.education-dot {
+    position: absolute;
+    left: -41px;
+    top: 12px;
+    width: 16px;
+    height: 16px;
+    background: var(--color-highlight, #1976d2);
+    border: 3px solid var(--color-background, #fff);
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(26,35,126,0.10);
+}
+
+.education-content h3 {
+    margin: 0 0 0.3rem 0;
+    font-weight: bold;
+    color: var(--color-navbar-text, #1a237e);
+    font-size: 1.15rem;
+}
+
+.education-content p {
+    margin: 0 0 0.3rem 0;
+    color: #444;
+    font-size: 1rem;
+}
+
+.education-years {
+    display: block;
+    color: #FFD600;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    margin-top: 0.2rem;
+    font-size: 1.05rem;
+}
+
+body.dark-mode .education-content p {
+    color: #ccd6f6;
+}
+
+
+.experience-section {
+    margin-top: 2.5rem;
+}
+
+.experience-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.experience-icon {
+    background: var(--color-card-bg, #e3eefd);
+    border-radius: 12px;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(26,35,126,0.10);
+}
+.experience-icon img {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+.experience-timeline {
+    position: relative;
+    margin-left: 32px;
+    padding-left: 32px;
+    border-left: 2px solid #bbb;
+}
+
+.experience-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding-left: 0.5rem;
+}
+
+.experience-dot {
+    position: absolute;
+    left: -41px;
+    top: 12px;
+    width: 16px;
+    height: 16px;
+    background: var(--color-highlight, #1976d2);
+    border: 3px solid var(--color-background, #fff);
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(26,35,126,0.10);
+}
+
+.experience-content h3 {
+    margin: 0 0 0.3rem 0;
+    font-weight: bold;
+    color: var(--color-navbar-text, #1a237e);
+    font-size: 1.15rem;
+}
+
+.experience-content p {
+    margin: 0 0 0.3rem 0;
+    color: #444;
+    font-size: 1rem;
+}
+
+.experience-years {
+    display: block;
+    color: #FFD600;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    margin-top: 0.2rem;
+    font-size: 1.05rem;
+}
+
+body.dark-mode .experience-content p {
+    color: #ccd6f6;
+}
+
+.education-icon,
+.experience-icon {
+    background: var(--color-card-bg, #e3eefd);
+    border-radius: 12px;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(26,35,126,0.10);
+    transition: background 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.education-icon:hover,
+.experience-icon:hover {
+    background: var(--color-highlight, #1976d2);
+    box-shadow: 0 4px 16px var(--color-hover, #1565c0);
+}
+
+.download-cv-btn {
+    display: inline-block;
+    margin: 1.2rem 0 0 0;
+    padding: 0.7rem 1.6rem;
+    background: var(--color-highlight, #1976d2);
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(26,35,126,0.10);
+    transition: background 0.2s, color 0.2s;
+}
+.download-cv-btn:hover {
+    background: var(--color-hover, #1565c0);
+    color: #fff;
+}
