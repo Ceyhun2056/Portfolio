@@ -6,6 +6,7 @@
     <title>Jeyhun Naghiyev | Portfolio</title>
     <meta name="description" content="Portfolio of Jeyhun Naghiyev - Web Developer, Designer, and Programmer.">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="certificates.css">
 </head>
 <body>
 
@@ -37,3 +38,32 @@
             <a href="/certificates.html" href="#blog">Certificates</a>
             <a href="#contact">Contact</a>
         </nav>
+
+        <section id="certificates" class="main-section">
+            <h1>Certificates</h1>
+            <p>Here are some of the certificates I have earned:</p>
+            <ul class="certificate-list">
+                <li>
+                    <img src="/media/certificate1.jpg" alt="Certificate 1" />
+                    <p>Certificate Title 1</p>
+                </li>
+                <li>
+                    <img src="/media/certificate2.jpg" alt="Certificate 2" />
+                    <p>Certificate Title 2</p>
+                </li>
+                <li>
+                    <img src="/media/certificate3.jpg" alt="Certificate 3" />
+                    <p>Certificate Title 3</p>
+                </li>
+            </ul>
+
+            <script>
+
+
+const toggleBtn = document.getElementById('darkModeToggle');
+toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+});
+
+</script>
