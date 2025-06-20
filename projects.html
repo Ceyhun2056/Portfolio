@@ -36,31 +36,38 @@
             <a href="/resume.html"  href="#resume">Resume</a>
             <a href="/projects.html" href="#portfolio">Projects</a>
             <a href="/certificates.html" href="#blog">Certificates</a>
-            <a href="#contact">Contact</a>
+             <a href="#" id="contactNav">Contact</a>
         </nav>
 
 <section id="projects" class="main-section">
     <h1>Projects</h1>
     <div class="projects-grid">
         <div class="project-card">
-            <img src="/media/project1.png" alt="Project 1" class="project-img"/>
+            <img src="/media/suitcase.png" alt="Project 1" class="project-img"/>
             <h3>Portfolio Website</h3>
             <p>A modern, responsive personal portfolio website built with HTML, CSS, and JavaScript. Features dark mode, project showcase, and downloadable CV.</p>
             <a href="https://github.com/Ceyhun2056/Portfolio" target="_blank" class="project-link">View on GitHub</a>
         </div>
         <div class="project-card">
-            <img src="/media/project2.png" alt="Project 2" class="project-img"/>
-            <h3>Task Manager App</h3>
-            <p>A simple task manager web app to organize daily activities. Built using JavaScript and local storage for persistent data.</p>
-            <a href="https://github.com/Ceyhun2056/TaskManager" target="_blank" class="project-link">View on GitHub</a>
+            <img src="/media/hashtag.png" alt="Project 2" class="project-img"/>
+            <h3>Hashtag Generator</h3>
+            <p>Hashtag Generator is a web app that uses AI to create effective hashtags. Users can upload a video or choose its type and genre, then receive optimized hashtags to boost social media engagement. Built with JavaScript and local storage.</p>
+            <a href="https://github.com/Ceyhun2056/HashtagGenerator" target="_blank" class="project-link">View on GitHub</a>
         </div>
         <div class="project-card">
-            <img src="/media/project3.png" alt="Project 3" class="project-img"/>
+            <img src="/media/dashboard.png" alt="Project 3" class="project-img"/>
             <h3>Weather Dashboard</h3>
             <p>Weather dashboard that fetches real-time weather data using a public API. Clean UI and responsive design.</p>
             <a href="https://github.com/Ceyhun2056/WeatherDashboard" target="_blank" class="project-link">View on GitHub</a>
         </div>
-     
+
+        <div class="project-card">
+            <img src="/media/online-shop.png" alt="Project 4" class="project-img"/>
+            <h3>Marketplace app</h3>
+            <p>A platform for buying and selling products, featuring user authentication and payment integration. Built with React and Node.js.</p>
+            <a href="https://github.com/Ceyhun2056/MarketplaceApp" target="_blank" class="project-link">View on GitHub</a>
+        </div>
+
     </div>
 </section>
 
@@ -71,6 +78,11 @@ const toggleBtn = document.getElementById('darkModeToggle');
 toggleBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
     toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+});
+
+document.getElementById('contactNav').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.location.href = "mailto:ceyhun.2007nagiev@gmail.com";
 });
 
 </script>

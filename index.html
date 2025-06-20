@@ -25,6 +25,7 @@
                 <a href="https://github.com/Ceyhun2056" target="_blank"><img src="/media/github.png" alt="GitHub"></a>
                 <a href="https://www.linkedin.com/in/jeyhun-naghiyev-b644bb28b/" target="_blank"><img src="/media/linkdeln.png" alt="LinkedIn"></a>
                 <a href="https://www.instagram.com/nagiev_ceyhun2007/" target="_blank"><img src="/media/instagram (1).png" alt="Instagram"></a>
+                
             </div>
         </div>
     </aside>
@@ -35,7 +36,7 @@
             <a href="/resume.html"  href="#resume">Resume</a>
             <a href="/projects.html" href="#portfolio">Projects</a>
             <a href="/certificates.html" href="#blog">Certificates</a>
-            <a href="#contact">Contact</a>
+            <a href="#" id="contactNav">Contact</a>
         </nav>
 
         <section id="about" class="main-section">
@@ -51,7 +52,7 @@ I'm driven by curiosity, a hunger for mastery, and a commitment to continuous gr
         </section>
 
         <section id="doing" class="main-section">
-            <h2>What I'm Doing</h2>
+            <h2>Learning & Exploring</h2>
             <div class="doing-grid">
                 <div class="doing-card">
                     <img src="/media/mobile-development.png" alt="Mobile Apps" />
@@ -80,6 +81,21 @@ I'm driven by curiosity, a hunger for mastery, and a commitment to continuous gr
                         <h3>Backend Development</h3>
                         <p>High-performance backend services designed for scalability and seamless user experience.</p>
                     </div>
+                </div>
+                <div class="doing-card">
+                    <img src="/media/microchip.png" alt="AI Solutions" />
+                    <div>
+                        <h3>AI Solutions</h3>
+                        <p>Innovative AI solutions that enhance user experience and automate tasks.</p>
+                    </div>
+                </div>
+                <div class="doing-card">
+                    <img src="/media/database-storage.png" alt="Database Design" />
+                    <div>
+                        <h3>Database Design</h3>
+                        <p>Learning to design and optimize SQL/NoSQL databases for efficient data flow and structure.</p>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -111,8 +127,7 @@ I'm driven by curiosity, a hunger for mastery, and a commitment to continuous gr
                     <img src="/media/letter-c.png" alt="Firebase" />
                     <span>C</span>
                 </div>
-                
-               
+                          
             </div>
         </section>
     </main>
@@ -124,6 +139,11 @@ const toggleBtn = document.getElementById('darkModeToggle');
 toggleBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
     toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+});
+
+document.getElementById('contactNav').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.location.href = "mailto:ceyhun.2007nagiev@gmail.com";
 });
 
 </script>
