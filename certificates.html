@@ -3,69 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeyhun Naghiyev | Portfolio</title>
-    <meta name="description" content="Portfolio of Jeyhun Naghiyev - Web Developer, Designer, and Programmer.">
+    <title>Certificates | Jeyhun Naghiyev</title>
+    <meta name="description" content="Certificates and achievements of Jeyhun Naghiyev">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="certificates.css">
 </head>
 <body>
 
     <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
 
-
 <div class="container">
     <aside class="sidebar">
         <div class="profile-card">
-            <img src="/media/Goku.jpg" alt="Jeyhun Naghiyev" class="sidebar-photo" />
+            <img src="media/Goku.jpg" alt="Jeyhun Naghiyev" class="sidebar-photo" />
             <h2>Jeyhun Naghiyev</h2>
             <div class="sidebar-role">Goku</div>
             <div class="sidebar-contact">
         
             </div>
             <div class="sidebar-social">
-                <a href="https://github.com/Ceyhun2056" target="_blank"><img src="/media/github.png" alt="GitHub"></a>
-                <a href="https://www.linkedin.com/in/jeyhun-naghiyev-b644bb28b/" target="_blank"><img src="/media/linkdeln.png" alt="LinkedIn"></a>
-                <a href="https://www.instagram.com/nagiev_ceyhun2007/" target="_blank"><img src="/media/instagram (1).png" alt="Instagram"></a>
+                <a href="https://github.com/Ceyhun2056" target="_blank"><img src="media/github.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/jeyhun-naghiyev-b644bb28b/" target="_blank"><img src="media/linkdeln.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/nagiev_ceyhun2007/" target="_blank"><img src="media/instagram (1).png" alt="Instagram"></a>
+                
             </div>
         </div>
     </aside>
 
     <main class="main-content">
         <nav class="main-nav">
-            <a href="index.html" class="active">About</a>
-            <a href="/resume.html"  href="#resume">Resume</a>
-            <a href="/projects.html" href="#portfolio">Projects</a>
-            <a href="/certificates.html" href="#blog">Certificates</a>
+            <a href="index.html">About</a>
+            <a href="resume.html">Resume</a>
+            <a href="projects.html">Projects</a>
+            <a href="certificates.html" class="active">Certificates</a>
             <a href="#" id="contactNav">Contact</a>
         </nav>
 
-               <section id="certificates" class="main-section">
+        <section id="certificates" class="main-section">
             <h1>Certificates</h1>
             <p>Here are some of the certificates I have earned:</p>
             <ul class="certificate-list">
-                <li onclick="openModal('/media/Screenshot 2025-07-08 003251.png')">
-                    <img src="/media/Screenshot 2025-07-08 003251.png" alt="Certificate 1" />
+                <li onclick="openModal('media/Screenshot 2025-07-08 003251.png')">
+                    <img src="media/Screenshot 2025-07-08 003251.png" alt="Certificate 1" />
                     <p>Programming in C</p>
                 </li>
-                <li onclick="openModal('/media/Screenshot 2025-07-08 003308.png')">
-                    <img src="/media/Screenshot 2025-07-08 003308.png" alt="Certificate 2" />
+                <li onclick="openModal('media/Screenshot 2025-07-08 003308.png')">
+                    <img src="media/Screenshot 2025-07-08 003308.png" alt="Certificate 2" />
                     <p>Exploring C</p>
                 </li>
-                <li onclick="openModal('/media/Screenshot 2025-07-08 003230.png')">
-                    <img src="/media/Screenshot 2025-07-08 003230.png" alt="Certificate 3" />
+                <li onclick="openModal('media/Screenshot 2025-07-08 003230.png')">
+                    <img src="media/Screenshot 2025-07-08 003230.png" alt="Certificate 3" />
                     <p>McKinsey Forward Program</p>
                 </li>
-                <li onclick="openModal('/media/Screenshot 2025-07-08 204311.png')">
-                    <img src="/media/Screenshot 2025-07-08 204311.png" alt="Certificate 4" />
+                <li onclick="openModal('media/Screenshot 2025-07-08 204311.png')">
+                    <img src="media/Screenshot 2025-07-08 204311.png" alt="Certificate 4" />
                     <p>Data Structures in C</p>
                 </li>
-<li onclick="openModal('/media/Screenshot 2025-07-11 191848.png')">
-                    <img src="/media/Screenshot 2025-07-11 191848.png" alt="Certificate 5" />
+                <li onclick="openModal('media/Screenshot 2025-07-11 191848.png')">
+                    <img src="media/Screenshot 2025-07-11 191848.png" alt="Certificate 5" />
                     <p>Building Objects in C</p>
-                </li>
-                <li onclick="openModal('/media/Screenshot 2025-07-11 191928.png')">
-                    <img src="/media/Screenshot 2025-07-11 191928.png" alt="Certificate 6" />
-                    <p>C Programming for Everybody</p>
                 </li>
             </ul>
 
@@ -77,34 +72,38 @@
                 </div>
             </div>
         </section>
+    </main>
+</div>
 
-        <script>
-            const toggleBtn = document.getElementById('darkModeToggle');
-            toggleBtn.addEventListener('click', () => {
-                document.body.classList.toggle('dark-mode');
-                toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-            });
+<script>
+const toggleBtn = document.getElementById('darkModeToggle');
+toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+});
 
-            document.getElementById('contactNav').addEventListener('click', function(e) {
-                e.preventDefault();
-                window.location.href = "mailto:ceyhun.2007nagiev@gmail.com";
-            });
+document.getElementById('contactNav').addEventListener('click', function(e) {
+    e.preventDefault();
+    window.location.href = "mailto:ceyhun.2007nagiev@gmail.com";
+});
 
-            // Modal functions
-            function openModal(imageSrc) {
-                document.getElementById('certificateModal').style.display = 'block';
-                document.getElementById('modalImage').src = imageSrc;
-            }
+// Modal functions
+function openModal(imageSrc) {
+    document.getElementById('certificateModal').style.display = 'block';
+    document.getElementById('modalImage').src = imageSrc;
+}
 
-            function closeModal() {
-                document.getElementById('certificateModal').style.display = 'none';
-            }
+function closeModal() {
+    document.getElementById('certificateModal').style.display = 'none';
+}
 
-            // Close modal when clicking outside
-            window.onclick = function(event) {
-                const modal = document.getElementById('certificateModal');
-                if (event.target === modal) {
-                    closeModal();
-                }
-            }
-        </script>
+// Close modal when clicking outside
+window.onclick = function(event) {
+    const modal = document.getElementById('certificateModal');
+    if (event.target === modal) {
+        closeModal();
+    }
+}
+</script>
+</body>
+</html>
