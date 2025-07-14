@@ -189,3 +189,187 @@ body.dark-mode .experience-content p {
     background: var(--color-hover, #1565c0);
     color: #fff;
 }
+
+/* Mobile and Tablet Responsive Design */
+@media (max-width: 768px) {
+    .education-section,
+    .experience-section {
+        margin-top: 1.5rem;
+    }
+    
+    .education-header,
+    .experience-header {
+        gap: 0.8rem;
+        margin-bottom: 1.5rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .education-header h2,
+    .experience-header h2 {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+    
+    .education-icon,
+    .experience-icon {
+        padding: 0.6rem;
+    }
+    
+    .education-icon img,
+    .experience-icon img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .education-timeline,
+    .experience-timeline {
+        margin-left: 20px;
+        padding-left: 25px;
+    }
+    
+    .education-item,
+    .experience-item {
+        margin-bottom: 2rem;
+        padding-left: 0.3rem;
+    }
+    
+    .education-dot,
+    .experience-dot {
+        left: -32px;
+        top: 8px;
+        width: 12px;
+        height: 12px;
+        border: 2px solid var(--color-background, #fff);
+    }
+    
+    .education-content h3,
+    .experience-content h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.2rem;
+    }
+    
+    .education-content p,
+    .experience-content p {
+        font-size: 0.95rem;
+        margin-bottom: 0.2rem;
+    }
+    
+    .education-years,
+    .experience-years {
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+        margin-top: 0.1rem;
+    }
+    
+    .download-cv-btn {
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+        margin: 1.5rem 0 0 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-section,
+    .experience-section {
+        margin-top: 1rem;
+    }
+    
+    .education-header,
+    .experience-header {
+        margin-bottom: 1rem;
+    }
+    
+    .education-header h2,
+    .experience-header h2 {
+        font-size: 1.2rem;
+    }
+    
+    .education-icon,
+    .experience-icon {
+        padding: 0.5rem;
+    }
+    
+    .education-icon img,
+    .experience-icon img {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .education-timeline,
+    .experience-timeline {
+        margin-left: 15px;
+        padding-left: 20px;
+        border-left-width: 1px;
+    }
+    
+    .education-item,
+    .experience-item {
+        margin-bottom: 1.5rem;
+        padding-left: 0.2rem;
+    }
+    
+    .education-dot,
+    .experience-dot {
+        left: -25px;
+        top: 6px;
+        width: 10px;
+        height: 10px;
+        border-width: 2px;
+    }
+    
+    .education-content h3,
+    .experience-content h3 {
+        font-size: 1rem;
+        margin-bottom: 0.1rem;
+    }
+    
+    .education-content p,
+    .experience-content p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    
+    .education-years,
+    .experience-years {
+        font-size: 0.9rem;
+    }
+    
+    .download-cv-btn {
+        padding: 0.7rem 0.8rem;
+        font-size: 0.95rem;
+        border-radius: 6px;
+    }
+}
+
+@media (max-width: 360px) {
+    .education-timeline,
+    .experience-timeline {
+        margin-left: 10px;
+        padding-left: 15px;
+    }
+    
+    .education-dot,
+    .experience-dot {
+        left: -20px;
+        width: 8px;
+        height: 8px;
+    }
+    
+    .education-content h3,
+    .experience-content h3 {
+        font-size: 0.95rem;
+    }
+    
+    .education-content p,
+    .experience-content p {
+        font-size: 0.85rem;
+    }
+    
+    .education-years,
+    .experience-years {
+        font-size: 0.85rem;
+    }
+}

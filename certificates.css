@@ -3,9 +3,10 @@
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
+    width: 100%;
 }
 
 .certificate-list li {
@@ -15,6 +16,9 @@
     box-shadow: 0 4px 16px rgba(26,35,126,0.10);
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .certificate-list li:hover {
@@ -79,18 +83,96 @@
     color: #ccc;
 }
 
-/* Mobile responsive */
+/* Mobile and Tablet Responsive Design */
+@media (max-width: 900px) {
+    .certificate-list {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
 @media (max-width: 768px) {
     .certificate-list {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    .certificate-list li {
+        padding: 1.2rem;
+        border-radius: 12px;
+    }
+    
+    .certificate-list img {
+        border-radius: 8px;
+        margin-bottom: 0.8rem;
+    }
+    
+    .certificate-list p {
+        font-size: 1.1rem;
+    }
+    
+    .modal-content {
+        max-width: 95%;
+        max-height: 95%;
+    }
+    
+    .close {
+        top: 5px;
+        right: 15px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .certificate-list {
+        gap: 1rem;
+        margin-top: 1rem;
+        padding: 0 0.5rem;
     }
     
     .certificate-list li {
         padding: 1rem;
+        border-radius: 10px;
+    }
+    
+    .certificate-list img {
+        border-radius: 6px;
+        margin-bottom: 0.6rem;
     }
     
     .certificate-list p {
         font-size: 1rem;
+        line-height: 1.4;
+    }
+    
+    .modal-content {
+        max-width: 98%;
+        max-height: 98%;
+    }
+    
+    .close {
+        top: 2px;
+        right: 10px;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 360px) {
+    .certificate-list {
+        padding: 0 0.2rem;
+    }
+    
+    .certificate-list li {
+        padding: 0.8rem;
+    }
+    
+    .certificate-list p {
+        font-size: 0.95rem;
+    }
+    
+    .close {
+        font-size: 25px;
+        right: 8px;
     }
 }
