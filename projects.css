@@ -1,22 +1,29 @@
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
     margin-top: 2rem;
-    max-width: 100%;
+    max-width: 1200px;
     width: 100%;
+    justify-items: start;
+    margin-left: 0;
+    margin-right: auto;
+    padding: 0 2rem 0 1rem;
 }
 
 .project-card {
     background: var(--color-card-bg);
     border-radius: 16px;
-    padding: 1.5rem;
+    padding: 1rem;
     box-shadow: 0 4px 16px rgba(26,35,126,0.10);
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
     overflow: hidden;
     width: 100%;
-    max-width: 450px;
+    max-width: 280px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -26,10 +33,10 @@
 
 .project-image {
     width: 100%;
-    height: 200px;
+    height: 140px;
     overflow: hidden;
     border-radius: 12px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,8 +44,8 @@
 }
 
 .project-image img {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
     transition: transform 0.3s;
     max-width: 100%;
@@ -49,32 +56,39 @@
     transform: scale(1.1);
 }
 
+.project-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 .project-content h3 {
     color: var(--color-highlight);
-    font-size: 1.3rem;
-    margin: 0 0 0.8rem 0;
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem 0;
 }
 
 .project-content p {
     color: var(--color-navbar-text);
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    line-height: 1.6;
+    font-size: 0.85rem;
+    margin-bottom: 0.7rem;
+    line-height: 1.4;
+    flex: 1;
 }
 
 .project-tech {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
+    gap: 0.3rem;
+    margin-bottom: 0.8rem;
 }
 
 .project-tech span {
     background: var(--color-highlight);
     color: white;
-    padding: 0.3rem 0.8rem;
+    padding: 0.2rem 0.5rem;
     border-radius: 20px;
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     font-weight: 500;
 }
 
@@ -84,11 +98,11 @@
 }
 
 .btn-primary, .btn-secondary {
-    padding: 0.6rem 1.2rem;
+    padding: 0.4rem 0.8rem;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     transition: all 0.3s;
     border: none;
     cursor: pointer;
@@ -128,10 +142,26 @@
 }
 
 /* Mobile and Tablet Responsive Design */
+@media (max-width: 1100px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 3rem;
+        max-width: 100%;
+        padding: 0 1.5rem;
+    }
+}
+
 @media (max-width: 900px) {
     .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2.5rem;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .project-card {
+        max-width: 100%;
+        min-height: 380px;
     }
 }
 
@@ -147,6 +177,7 @@
         padding: 1.2rem;
         max-width: 100%;
         margin: 0 auto;
+        min-height: auto;
     }
     
     .project-content h3 {
