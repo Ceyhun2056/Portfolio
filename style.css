@@ -570,3 +570,148 @@ img {
     }
 }
 
+/* ===== DYNAMIC ANIMATIONS ===== */
+
+/* Typing Animation for Name */
+#typing-name {
+    position: relative;
+    min-height: 1.5em;
+}
+
+#typing-name.typing::after {
+    content: '|';
+    animation: blink 1s infinite;
+    color: var(--color-highlight);
+}
+
+/* Typing Animation for Role */
+#typing-role {
+    position: relative;
+    min-height: 1.2em;
+}
+
+#typing-role::after {
+    content: '|';
+    animation: blink 1s infinite;
+    color: var(--color-highlight);
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+/* Fade In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Slide Up Animation for Doing Cards */
+.slide-up {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUpFade 0.6s ease-out forwards;
+}
+
+@keyframes slideUpFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Enhanced Skill Card Animations */
+.skill-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease !important;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.05) !important;
+    box-shadow: 0 8px 25px rgba(26,35,126,0.15) !important;
+}
+
+/* Enhanced Doing Card Animations */
+.doing-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.doing-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 12px 30px rgba(26,35,126,0.2) !important;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading Animation for Profile Photo */
+.sidebar-photo {
+    animation: photoFadeIn 1s ease-in-out;
+}
+
+@keyframes photoFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Social Icons Hover Enhancement */
+.sidebar-social img {
+    transition: background 0.3s ease, transform 0.3s ease, filter 0.3s ease !important;
+}
+
+.sidebar-social img:hover {
+    background: var(--color-hover) !important;
+    transform: scale(1.2) rotate(5deg) !important;
+    filter: brightness(1.1);
+}
+
+/* Navigation Hover Enhancement */
+.main-nav a {
+    position: relative;
+    overflow: hidden;
+}
+
+.main-nav a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.main-nav a:hover::before {
+    left: 100%;
+}
+
+/* Pulse Animation for Dark Mode Toggle */
+#darkModeToggle {
+    transition: all 0.3s ease !important;
+}
+
+#darkModeToggle:hover {
+    animation: pulse 0.6s ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
