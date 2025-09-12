@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="resume.css">
 </head>
 <body>
+    <!-- Scroll Progress Indicator -->
+    <div id="scrollProgress"></div>
 
-<button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
-
-<div class="container">
+    <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button><div class="container">
     <aside class="sidebar">
         <div class="profile-card">
             <img src="media/Goku.jpg" alt="Jeyhun Naghiyev" class="sidebar-photo" />
@@ -80,6 +80,14 @@
 </section>
 
 <script>
+
+// Scroll Progress Indicator
+window.addEventListener('scroll', () => {
+    const scrollProgress = document.getElementById('scrollProgress');
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = (window.scrollY / totalHeight) * 100;
+    scrollProgress.style.width = progress + '%';
+});
 
 // Dark mode toggle
 const toggleBtn = document.getElementById('darkModeToggle');
